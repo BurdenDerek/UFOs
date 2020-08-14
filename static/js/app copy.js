@@ -48,6 +48,7 @@ function handleClick() {
     let state = d3.select("#state").property("value");
     let country = d3.select("#country").property("value");
     let shape = d3.select("#shape").property("value");
+    let filters = [date, city, state, country, shape]
     let filteredData = tableData;
     
     // Check to see if a date was entered and filter the
